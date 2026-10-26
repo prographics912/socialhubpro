@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="MSI TRACK logo">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#792cff"/><stop offset=".48" stop-color="#f0189b"/><stop offset="1" stop-color="#ff6b35"/></linearGradient></defs>
+<rect x="5" y="5" width="118" height="118" rx="29" fill="url(#g)"/>
+<g fill="none" stroke="#171329" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M47 54C55 36 69 25 86 22C87 39 78 57 61 68L47 54Z"/>
+<path d="M47 54L35 55L27 65L43 66"/>
+<path d="M61 68L62 84L72 76L73 63"/>
+<path d="M44 75C36 75 29 82 26 94C38 91 45 84 44 75Z"/>
+<path d="M53 60L63 70"/>
+</g></svg>
