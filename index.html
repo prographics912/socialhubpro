@@ -131,7 +131,7 @@
 </section>
 <section class="section" id="contact">
   <div class="container contact-grid">
-    <div class="contact-info reveal"><span class="eyebrow">Let's connect</span><h2>Tell us where you want to <span class="gradient-text">go next.</span></h2><p>Share a little about your business and the challenge you want to solve. We’ll use it to understand what kind of support may fit.</p><div class="contact-method"><strong>Marketing · Technology · Business</strong><small>One conversation to find the right next step.</small></div><div class="contact-method"><strong>Project-based or ongoing</strong><small>Scope and fees confirmed before work begins.</small></div></div>
+    <div class="contact-info reveal"><span class="eyebrow">Let's connect</span><h2>Tell us where you want to <span class="gradient-text">go next.</span></h2><p>Share a little about your business and the challenge you want to solve. We’ll use it to understand what kind of support may fit.</p><div class="contact-method"><strong>Professional email</strong><small><a href="mailto:info@mfitrack.com">info@mfitrack.com</a></small></div><div class="contact-method"><strong>Marketing · Technology · Business</strong><small>One conversation to find the right next step.</small></div><div class="contact-method"><strong>Project-based or ongoing</strong><small>Scope and fees confirmed before work begins.</small></div></div>
     <form class="contact-form reveal" id="contactForm">
       <div class="form-grid">
         <div class="field"><label for="name">Your name</label><input id="name" name="name" required placeholder="Name"></div>
@@ -140,7 +140,7 @@
         <div class="field full"><label for="message">Tell us about your project</label><textarea id="message" name="message" required placeholder="Your goals, timeline, and what you need help with..."></textarea></div>
       </div>
       <button class="btn" type="submit">Prepare email inquiry <span>↗</span></button>
-      <p class="form-hint">This form opens your email app to send the inquiry. It does not submit data to a server.</p>
+      <p class="form-hint">This form opens your email app with an inquiry addressed to info@mfitrack.com. It does not submit data to a server.</p>
       <p id="formStatus" class="form-hint" role="status"></p>
     </form>
   </div>
@@ -186,7 +186,7 @@ document.querySelectorAll('.portfolio-filter').forEach(button=>button.addEventLi
 
 const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.08});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.currentTarget);const subject=encodeURIComponent('MFI TRACK inquiry — '+d.get('service'));const body=encodeURIComponent('Name: '+d.get('name')+'\nEmail: '+d.get('email')+'\nService: '+d.get('service')+'\n\nProject details:\n'+d.get('message'));document.getElementById('formStatus').textContent='Your email app should open with the inquiry drafted. Add MFI TRACK’s contact email before launch if you want this form to address a specific inbox.';window.location.href='mailto:'+'?subject='+subject+'&body='+body;});
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.currentTarget);const subject=encodeURIComponent('MFI TRACK inquiry — '+d.get('service'));const body=encodeURIComponent('Name: '+d.get('name')+'\nEmail: '+d.get('email')+'\nService: '+d.get('service')+'\n\nProject details:\n'+d.get('message'));document.getElementById('formStatus').textContent='Opening your email app to send this inquiry to info@mfitrack.com.';window.location.href='mailto:info@mfitrack.com?subject='+subject+'&body='+body;});
 </script>
 </body>
 </html>
